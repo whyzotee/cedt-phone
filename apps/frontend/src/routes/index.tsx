@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 
 export const Route = createFileRoute("/")({
   component: Index
@@ -13,7 +13,7 @@ function Index() {
           <h1 className="text-5xl">Find your phone at CEDT Phone</h1>
           <div className="flex gap-4">
             <input className="border w-full" type="text" />
-            <button>search</button>
+            <Link to="/note">search</Link>
           </div>
         </div>
         <video className="w-full h-full -z-10" autoPlay loop muted playsInline>
