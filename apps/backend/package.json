@@ -2,7 +2,7 @@
   "name": "api",
   "private": true,
   "scripts": {
-    "dev": "cross-env-shell \"if [ ! -d venv ]; then python -m venv venv && venv/bin/python -m pip install -r requirements.txt; fi && venv/bin/python -m uvicorn src.main:app --reload\"",
+    "dev": "venv/bin/python -m pip install -r requirements.txt && venv/bin/python -m uvicorn src.main:app --reload",
     "test": "fastapi dev main.py"
   }
 }
